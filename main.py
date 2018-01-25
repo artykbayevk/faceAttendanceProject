@@ -1,10 +1,10 @@
 from flask import Flask
 import requests
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
 
-@app.route('/')
+@APP.route('/')
 def hello_world():
     files = {
         'photo[0] ': (None, ' ~/kamalsdu/Desktop/img1.jpg'),
@@ -12,8 +12,9 @@ def hello_world():
     }
 
     response = requests.post('https://verigram.kz/api/', files=files)
-    return response.data
+    print(response.content)
+    return 'Hello'
 
 
 if __name__ == '__main__':
-    app.run()
+    APP.run()
