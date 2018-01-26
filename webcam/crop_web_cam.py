@@ -16,7 +16,7 @@ webcam = cv2.VideoCapture(0) #Use camera 0
 
 # We load the xml file
 classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-#  Above line normalTest
+# Above line normalTest
 #classifier = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 #Above line test with different calulation
 #classifier = cv2.CascadeClassifier('haarcascade_frontalface_alt_tree.xml')
