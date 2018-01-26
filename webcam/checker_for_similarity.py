@@ -29,13 +29,6 @@ def get_all_faces():
             print('Similarity btwn {} and {} : {}'.format(f1_name, f2_name, res))
 
 def main():
-    # img1 = sys.argv[1]
-    # img2 = sys.argv[2]
-    # print(img1)
-    # print(img2)
-    # sim = curl(img1, img2)
-    # print('Similarity: {}'.format(sim))
-
     get_all_faces()
 
 if __name__ == '__main__':
